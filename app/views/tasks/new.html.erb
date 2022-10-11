@@ -5,15 +5,10 @@
         <div class="btn btn-danger" id="error_explanation"> 
 
             <ul>
-                <% if @task.errors.full_messages.length == 1 %>
-                <% if @task.errors.full_messages.include?('タイトルを入力してください') == true %>
-                    <li><%= t("message.validate.title") %></li>
-                <% else %>
-                    <li><%= t("message.validate.content") %></li>
-                <% end %>
-                <% else %>
-                <li><%= @task.errors.full_messages.join(', ') %> </li>
-                <% end %>
+            <% @task.errors.full_messages.each do |message| %>
+                    
+                <li><%= message %> </li>
+            <% end %>
             </ul>
         </div>
     <% end %>
