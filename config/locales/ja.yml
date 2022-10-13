@@ -5,7 +5,7 @@ ja:
     attributes:
       task:
         title: タイトル
-        content: "内容"
+        content: 内容
         create: "登録する"
         back:  "戻る"
         created_at: "作成日時"

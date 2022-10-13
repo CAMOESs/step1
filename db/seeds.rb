@@ -5,6 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-50.times do |i|
-    Task.create!(title: "task#{i+1}", content:"content#{i+1}")
+50.times do |j|
+    Task.create!(title: "task#{j+1}", content:"content#{j+1}")
  end
